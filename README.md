@@ -26,6 +26,10 @@ Ensure you have the following installed:
 
 ```bash
 git clone https://github.com/Draf101/todo-app.git
+```
+Enter the cloned repository:
+
+```
 cd todo-app
 ```
 

@@ -1,0 +1,10 @@
+C:\TODO\todo-backend\publish\todo-backend.exe
+C:\TODO\todo-backend\publish\appsettings.Development.json
+C:\TODO\todo-backend\publish\appsettings.json
+C:\TODO\todo-backend\publish\todo-backend.dll
+C:\TODO\todo-backend\publish\todo-backend.deps.json
+C:\TODO\todo-backend\publish\todo-backend.runtimeconfig.json
+C:\TODO\todo-backend\publish\todo-backend.pdb
+C:\TODO\todo-backend\publish\LiteDB.dll
+C:\TODO\todo-backend\publish\Microsoft.AspNetCore.OpenApi.dll
+C:\TODO\todo-backend\publish\Microsoft.OpenApi.dll

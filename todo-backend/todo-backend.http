@@ -1,0 +1,6 @@
+@todo_backend_HostAddress = http://0.0.0.0:7277
+
+GET {{todo_backend_HostAddress}}/todo/
+Accept: application/json
+
+###

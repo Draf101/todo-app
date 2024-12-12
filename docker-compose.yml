@@ -1,0 +1,31 @@
+version: "3.8"
+services:
+  backend:
+    build: ./todo-backend  # Path to backend Dockerfile
+    container_name: todo-backend
+    ports:
+      - "7277:7277"  # Map container port 7277 to host port 7277
+    networks:
+      - todo-network
+  frontend:
+    build: ./todo-frontend  # Path to frontend Dockerfile
+    container_name: todo-frontend
+    ports:
+      - "5173:80"  # Map container port 5173 to host port 5173
+    depends_on:
+      - backend  # Wait for the backend to be ready
+    networks:
+      - todo-network
+  nginx:
+    image: nginx:stable-alpine
+    container_name: nginx-container
+    ports:
+      - "80:80"
+    volumes:
+      - ./todo-frontend/dist:/usr/share/nginx/html  # Serve frontend
+    networks:
+      - todo-network
+
+networks:
+  todo-network:
+    driver: bridge
